@@ -42,18 +42,30 @@ width: 520px;
        margin:0px;
        padding:0px;
        list-style: none;
-        
+        position:relative;
     }
+		   
 ul li {
-     
-    
-    background-color:d3d3d3;
-    line-height: 50px;
-    text-align:center;
+Position:relative;
+     width:100px; 
+	height:100px;
     font-size:20px;
     font-family: ariel;
-    
+    Text-align:center;
     }
+
+
+
+ul li ul li {
+    display: none;
+position:relative;
+}
+ul li:hover ul li {
+z-index:999;
+    display: block;
+Position:relative;
+Background-color:rgba(0,255,255,.7);
+}
 ul li a {
     text-decoration: none;
     color: red;
@@ -67,12 +79,7 @@ ul li a:hover {
     float:none;
     background-color:aqua; 
     }
-ul li ul li {
-    display: block;
-}
-ul li:hover ul li {
-    display: block;
-}
+
 	  
 body {
                  background:rgb(137,207,240);
@@ -253,16 +260,31 @@ body {
 		   }
 		   
 		   
-	.thorshammer{		  
-                           z-index:88;
-			   left:70%;
+			   .thorshammer{		  
+z-index:999;
 		  position:absolute;	
-                   width:350px;
-                   height:700px;
-                 border-style:outset;
-               overflow:scroll;
-                 background-color:rgb(137,207,240);
-		 }
+width:75px;
+   height:75px;
+background-color:rgb(222,137,240);
+float:left;
+background-image:url('https://i.pinimg.com/originals/32/e3/b5/32e3b500464be6825895808149cc1ae6.png');
+	background-size:75px 75px;
+	background-repeat:no-repeat;
+	border-radius:50%;
+	border-color:rgb(0,255,255);
+	border-style:outset;
+		   } 
+		   
+		   		   .border6{
+	overflow:scroll;
+	width:580px; 
+	height:680px;
+        z-index:-5;
+        background-color:rgba(0,255,100,.6);
+	border-radius:40px;
+	border-style:inset;
+	padding-top:50px;
+}      
 		   
 .foodstamps{
 	borderstyle:outset;
@@ -277,7 +299,7 @@ body {
    
    padding-left:5%;
     float:left;
-   width:500px;
+   width:100%;
      height:1000px;
 	border-style:outset;
 	overflow:scroll;
@@ -373,14 +395,28 @@ background-size:200px 100px;
      <br>
 
 
- <div class='thorshammer'>
-       <!-- begin wwww.htmlcommentbox.com -->
+<ul> 
+<button><li> <div class='thorshammer'></div>
+ 
+	
+<ul>
+<li>
+<div class="border6"> 
+		 
+	
+	
+
+
+ <!-- begin wwww.htmlcommentbox.com -->
 <center> <div id="HCB_comment_box" height='200px' width='300px'><a href="http://www.htmlcommentbox.com">Widget</a> is loading comments...</div>
  <link rel="stylesheet" type="text/css" href="//www.htmlcommentbox.com/static/skins/skeleton/skin.css" />
  <script type="text/javascript" id="hcb"> /*<!--*/ if(!window.hcb_user){hcb_user={};} (function(){var s=document.createElement("script"), l=hcb_user.PAGE || (""+window.location).replace(/'/g,"%27"), h="//www.htmlcommentbox.com";s.setAttribute("type","text/javascript");s.setAttribute("src", h+"/jread?page="+encodeURIComponent(l).replace("+","%2B")+"&mod=%241%24wq1rdBcg%242jlYMWXlPkcm5jejL9fSM%2F"+"&opts=16862&num=10&ts=1532736082314");if (typeof s!="undefined") document.getElementsByTagName("head")[0].appendChild(s);})(); /*-->*/ </script>
 </center>
           <!-- end www.htmlcommentbox.com -->
-     </div>
+	 </div> </li>
+</ul>
+</li></button>
+</ul>
      <div id='left-sidebar'>
 	     
 	      <center> <img src="https://i.pinimg.com/originals/87/f8/ad/87f8ade857386bf2dd7043e402a3566a.png" width="420px" height="250px"></center>
